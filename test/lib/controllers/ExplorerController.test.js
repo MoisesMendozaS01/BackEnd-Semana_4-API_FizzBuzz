@@ -1,3 +1,8 @@
-const ExplorerService = require('./../services/ExplorerService');
-const FizzBuzzService = require('./../services/FizzbuzzService');
-const Reader = require('./../utils/Reader');
+const ExplorerController = require('./../../../../BackEnd-Semana_4-API_FizzBuzz/lib/controllers/ExplorerController')
+
+describe('Unit Test for ExplorerController',()=>{
+    test('Parte 1: Probando clase ExplorerController',()=>{
+        const ExplorersByMission = ExplorerController.getExplorersByMission('node');
+        expect(ExplorersByMission).not.toBeUndefined
+    })
+})
