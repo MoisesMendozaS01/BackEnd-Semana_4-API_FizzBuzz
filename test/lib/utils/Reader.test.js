@@ -1,4 +1,4 @@
-const Reader = require("./../../../../BackEnd-Semana_4-FizzBuzz/lib/utils/Reader");
+const Reader = require("./../../../../BackEnd-Semana_4-API_FizzBuzz/lib/utils/Reader");
 
 
 describe("Unit Test for Reader class",()=>{
