@@ -1,6 +1,3 @@
-const Reader = require("./../../../../BackEnd-Semana_4-API_FizzBuzz/lib/utils/Reader");
-const explorers = Reader.readJsonFile("./explorers.json");
-
 const FizzbuzzService = require("./../../../../BackEnd-Semana_4-API_FizzBuzz/lib/services/FizzbuzzService");
 
 describe("Unit Test for FizzbuzzzService",()=>{
