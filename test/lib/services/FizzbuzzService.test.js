@@ -19,4 +19,13 @@ describe("Unit Test for FizzbuzzzService",()=>{
         expect(ExplorerTrick3.trick).toBe("BUZZ");
         expect(ExplorerTrick4.trick).toBe("FIZZBUZZ");
     });
+    test('Parte 2: Prueba de función ApplyValidationInNumber',()=>{
+        const explorerTrick = FizzbuzzService.applyValidationInNumber(10);
+        const explorerTrick1 = FizzbuzzService.applyValidationInNumber(7);
+        const explorerTrick2 = FizzbuzzService.applyValidationInNumber(3);
+
+        expect(explorerTrick).toBe('BUZZ');
+        expect(explorerTrick1).toBe(7);
+        expect(explorerTrick2).toBe('FIZZ')
+    })
 });
