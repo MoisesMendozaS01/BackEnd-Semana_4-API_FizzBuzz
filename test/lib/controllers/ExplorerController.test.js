@@ -8,8 +8,11 @@ describe('Unit Test for ExplorerController',()=>{
     })
     test('Parte 2: función getExplorersUsernamesByMission',()=>{
         const ExplorerUsernames = ExplorerController.getExplorersUsernamesByMission('node')
-
         expect(ExplorerUsernames).toContain('ajolonauta14')
+    })
+    test('Parte 3: Función getExplorersAmonutByMission',()=>{
+        const Explorers_number = ExplorerController.getExplorersAmonutByMission('node');
+        expect(Explorers_number).toBe(10)
     })
     
 })
