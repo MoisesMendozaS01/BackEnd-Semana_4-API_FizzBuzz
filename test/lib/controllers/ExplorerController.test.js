@@ -14,5 +14,14 @@ describe("Unit Test for ExplorerController",()=>{
         const Explorers_number = ExplorerController.getExplorersAmonutByMission("node");
         expect(Explorers_number).toBe(10);
     });
+    test('Parte 4: Función getExplorerTrick',()=>{
+        const ExplorerTrick= ExplorerController.getExplorerTrick(5);
+        const ExplorerTrick1= ExplorerController.getExplorerTrick(7);
+        const ExplorerTrick2= ExplorerController.getExplorerTrick(3);
+
+        expect(ExplorerTrick).toBe('BUZZ')
+        expect(ExplorerTrick1).toBe(7)
+        expect(ExplorerTrick2).toBe('FIZZ')
+    })
     
 });
