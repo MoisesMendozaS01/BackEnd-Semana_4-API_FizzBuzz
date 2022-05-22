@@ -19,13 +19,13 @@ describe("Unit Test for FizzbuzzzService",()=>{
         expect(ExplorerTrick3.trick).toBe("BUZZ");
         expect(ExplorerTrick4.trick).toBe("FIZZBUZZ");
     });
-    test('Parte 2: Prueba de función ApplyValidationInNumber',()=>{
+    test("Parte 2: Prueba de función ApplyValidationInNumber",()=>{
         const explorerTrick = FizzbuzzService.ApplyValidationInNumber(10);
         const explorerTrick1 = FizzbuzzService.ApplyValidationInNumber(7);
         const explorerTrick2 = FizzbuzzService.ApplyValidationInNumber(3);
 
-        expect(explorerTrick).toBe('BUZZ');
+        expect(explorerTrick).toBe("BUZZ");
         expect(explorerTrick1).toBe(7);
-        expect(explorerTrick2).toBe('FIZZ')
+        expect(explorerTrick2).toBe("FIZZ");
     });
 });
